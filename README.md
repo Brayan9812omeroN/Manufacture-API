@@ -30,11 +30,13 @@ The client is in a separate repository, it was developed with **Angular 17**.
 ## Run Locally
 
 ### Database
-To use PostgreSQL, make sure the service is running. The configuration file for the database connection is in src/main/resources/application.properties.
 
-Run the following script to create the necessary tables:
+To use PostgreSQL, make sure the service is running. The configuration file for the database connection is in.`src/main/resources/application.properties`
+
+Run the following script to create the database:
 
 Database Creation Script
+
 ```bash
 CREATE DATABASE bd_manufactura;
 ```
