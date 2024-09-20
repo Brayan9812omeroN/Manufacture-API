@@ -79,8 +79,8 @@ The API requires JWT token-based authentication. To obtain a token, send a reque
 ```bash
 POST /auth/login
 {
-    "username": "tu_usuario",
-    "password": "tu_contraseña"
+    "username": "Admin",
+    "password": "1234"
 }
 ```
 
@@ -91,6 +91,23 @@ The API has interactive documentation generated with Swagger. Once the applicati
 
 [API Documentation](http://localhost:8080/swagger-ui.html)
 
+## Using the API via Frontend
+
+We recommend using the Manufacture Web frontend to interact with this API. The frontend provides a user-friendly interface for managing product stock, registration, and defect reporting. By default, the frontend runs on and connects to this API.`http://localhost:4200`
+
+To ensure the frontend properly connects to the API, make sure the API is running at , and the frontend is configured to point to the correct in its environment settings:`http://localhost:8080``apiUrl`
+
+```bash
+// src/environments/environment.ts (Frontend)
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:8080'
+};
+```
+You can clone and run the frontend from the following repository:
+- Frontend repository: [Manufacture Web](https://github.com/Brayan9812omeroN/ManufactureWeb)
+
+Alternatively, you can consume this API directly via tools like Postman.
 
 ## Support
 
